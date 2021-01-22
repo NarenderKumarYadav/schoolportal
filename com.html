@@ -1,0 +1,23 @@
+<html>
+<head><title>com/sug</title></head>
+<body bgcolor="pink">
+<form>
+<center>
+<label for="ask"><h1>Complaint:<br></h1></label>
+<input type="text" name="ask" placeholder="What's your problem." style="height:30;width:500" required id="1"><br>
+<font color="red" size="1">-Keep it Short and simple<br>-Use complete words. Avoid slang and abusive language<br></font>
+<label for="desc"><h1>Suggestion(optional):<br></h1></label>
+<input type="text" name="desc" placeholder="Give your suggestion here." style="height:30;width:500"><br><br><br><br>
+<input type="submit" value="SUBMIT" style="background-color:green" onclick="myfunction()">
+</center>
+</form>
+<script>
+function myfunction()
+{
+var x=document.getElementById("1").value;
+if(x!="")
+alert('Your complaint has been recorded');
+}
+</script>
+</body>
+</html>

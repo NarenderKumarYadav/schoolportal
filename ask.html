@@ -1,0 +1,25 @@
+<html>
+<head><title>ask</title></head>
+<body bgcolor="powderblue">
+<form>
+<center>
+<label for="ask"><h1>Question:<br></h1></label>
+<input type="text" name="ask" placeholder="Type Your Question" style="height:30;width:500" required id="1"><br>
+<font color="red" size="1">-Keep it Short and simple<br>-Use complete words. Avoid slang and abusive language<br></font>
+<label for="desc"><h1>Description(optional):<br></h1></label>
+<input type="text" name="desc" placeholder="Give information like score,education background,etc" style="height:30;width:500" ><br><br><br><br>
+<input type="submit" value="Next" onclick="myfunction()" >
+
+
+</center>
+</form>
+<script>
+function myfunction()
+{
+var x=document.getElementById("1").value;
+if(x!="")
+alert('Your question has been recorded');
+}
+</script>
+</body>
+</html>
